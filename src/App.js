@@ -1,21 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './components/Home.js';
-import About from './components/About.js';
-import { Route, Link } from 'react-router-dom';
+import React from 'react';
+import MemberPage from "./components/member/MemberPage";
+// import CounterPage from "./components/hooks/CounterPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Link to='/'>HOME</Link>
-        <Link to='/about'>ABOUT</Link>
-        <Route path='/' exact={ true } component={ Home } />
-        <Route path='/about' component={ About } />
-      </header>
-    </div>
-  );
+	return (
+		// <CounterPage />
+		<MemberPage />
+	)
 }
 
 export default App;
