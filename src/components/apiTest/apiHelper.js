@@ -10,6 +10,9 @@ export const getUsers = async () => {
   return data;
 }
 
-export const getUserById = targetId => {
+export const getUserById = async targetId => {
+  if(!users.length) {
+    users = await getUsers();
+  }
   return users.filter(({ id }) => id === targetId)
 }
