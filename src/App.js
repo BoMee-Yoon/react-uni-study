@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home.js';
 import About from './components/About.js';
+import ApiTest from './components/apiTest/apiTest.js';
 import { Route, Link } from 'react-router-dom';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' exact={ true } component={ Home } />
         <Route path='/about' component={ About } />
       </header>
+      <ApiTest />
     </div>
   );
 }
