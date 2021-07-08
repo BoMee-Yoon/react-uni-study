@@ -10,7 +10,8 @@ export default function ApiTest() {
     try {
       setError('');
       setLoding(true);
-      setUsers(await getUsers());
+      const response = await getUsers();
+      setUsers(response);
 
     } catch(error) {
       const ERROR_CODE = 1;
